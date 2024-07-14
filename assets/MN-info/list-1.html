@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-2.css">
+    <title>Особистий кабінет</title>
+    
+    <link rel="stylesheet" href="path/to/your/styles.css"> <!-- Підключення файлу стилів -->
+    <link rel="shortcut icon" href="assets/images/MN-BUD.png" type="image/x-icon">
+</head>
+<body class="dark-version black-bg">
+    <header class="mh-header mh-fixed-nav nav-scroll mh-xs-mobile-nav wow fadeInUp" id="mh-header">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <nav class="navbar navbar-expand-lg mh-nav nav-btn">
+                    <div class="navbar-brand">
+                        <h2>MN-BUD</h2> <!-- Логотип -->
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-0 ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="file:///C:/Users/marki/OneDrive/Pulpit/%D0%9D%D0%BE%D0%B2%D0%B0%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/Program%20kod%20leasson/Free%20kod/Mn-BUD/home-one.html">Головна</a> <!-- Посилання "Головна" -->
+                            </li>
+                            <li class="nav-item active">
+                                <a class="nav-link" href="file:///C:/Users/marki/OneDrive/Pulpit/%D0%9D%D0%BE%D0%B2%D0%B0%20%D0%BF%D0%B0%D0%BF%D0%BA%D0%B0/Program%20kod%20leasson/Free%20kod/Mn-BUD/assets/MN-info/top.html">Рейтинг</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon icon"></span> <!-- Кнопка для мобільного меню -->
+                    </button>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-card">
+        <h2 class="profile-name">Гладій Любомир</h2>
+        <p class="profile-job">Спеціальність: Плотнік<br>Місце роботи: Sadyba spot</p>
+    </div>
+    
+    <div class="chart-container">
+        <label for="monthSelect">Оберіть місяць:</label>
+        <select id="monthSelect" onchange="updateChart()">
+            <option value="january">Січень</option>
+            <option value="february">Лютий</option>
+            <option value="march">Березень</option>
+        </select>
+        <canvas id="workHoursChart"></canvas>
+        <p class="total-hours">Загальна кількість годин за місяць: <span id="totalHours"></span></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="list-2.js"></script>
+</body>
+</html>

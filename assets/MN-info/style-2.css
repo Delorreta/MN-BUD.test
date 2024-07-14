@@ -1,0 +1,173 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Стиль для картки профілю */
+.profile-card {
+    border: 1px solid #ddd; /* Рамка картки */
+    border-radius: 10px; /* Округлі кути */
+    padding: 20px; /* Відступи всередині картки */
+    max-width: 300px; /* Максимальна ширина картки */
+    text-align: center; /* Вирівнювання тексту по центру */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тінь картки */
+    font-family: Arial, sans-serif; /* Шрифт для тексту */
+}
+
+/* Стиль для зображення профілю */
+.profile-img {
+    border-radius: 50%; /* Округлення зображення */
+    width: 100px; /* Ширина зображення */
+    height: 100px; /* Висота зображення */
+    object-fit: cover; /* Обрізка зображення, щоб воно заповнювало круг */
+}
+
+/* Стиль для імені профілю */
+.profile-name {
+    font-size: 24px; /* Розмір шрифту для імені */
+    margin: 10px 0; /* Відступи зверху та знизу */
+}
+
+/* Стиль для посади та місця роботи */
+.profile-job {
+    font-size: 18px; /* Розмір шрифту для посади та місця роботи */
+    color: #555; /* Колір тексту */
+    text-align: left;
+}
+
+
+h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.chart-container {
+    width: 80%;
+    max-width: 600px;
+}
+
+/* Загальні стилі для шапки */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.mh-header {
+    background-color: #333; /* Темний фон для шапки */
+    color: #fff; /* Білий колір тексту */
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Високий пріоритет відображення */
+    transition: all 0.3s ease-in-out; /* Плавний перехід */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тінь для шапки */
+}
+
+.mh-header .navbar {
+    display: flex; /* Використання Flexbox для вирівнювання елементів */
+    justify-content: space-between; /* Розміщення елементів по краях */
+    align-items: center; /* Вирівнювання елементів по вертикалі */
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mh-header .navbar-brand h2 {
+    font-size: 24px; /* Розмір шрифту для логотипу */
+    margin: 0;
+    color: #fff; /* Білий колір тексту */
+    text-decoration: none;
+    margin-left: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Тінь для тексту */
+}
+
+.mh-header .navbar-toggler {
+    border: none; /* Без рамки */
+    background: none; /* Без фону */
+    cursor: pointer;
+    display: none; /* Приховано за замовчуванням */
+}
+
+.mh-header .navbar-toggler .icon {
+    width: 30px; /* Ширина іконки */
+    height: 30px; /* Висота іконки */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.mh-header .navbar-collapse {
+    display: flex; /* Використання Flexbox для вирівнювання елементів */
+    justify-content: flex-start; /* Розміщення елементів на початку */
+}
+
+.mh-header .navbar-nav {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mh-header .navbar-nav .nav-item {
+    margin-left: 20px; /* Відступ між елементами навігації */
+    text-align: center;
+}
+
+.mh-header .navbar-nav .nav-item .nav-link {
+    color: #fff; /* Білий колір тексту */
+    font-size: 18px; /* Розмір шрифту для навігаційних посилань */
+    transition: color 0.3s ease-in-out; /* Плавний перехід кольору */
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+}
+
+.mh-header .navbar-nav .nav-item .nav-link:hover {
+    color: #ffcc00; /* Світліший відтінок при наведенні */
+    background-color: rgba(255, 204, 0, 0.1); /* Тло при наведенні */
+}
+
+@media (max-width: 768px) {
+    .mh-header .navbar-toggler {
+        display: block; /* Показувати на малих екранах */
+    }
+
+    .mh-header .navbar-collapse {
+        display: none; /* Приховувати на малих екранах */
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+    }
+
+    .mh-header .navbar-collapse.active {
+        display: flex; /* Показувати при активності */
+    }
+
+    .mh-header .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .mh-header .navbar-nav .nav-item {
+        margin-left: 0;
+    }
+
+    .mh-header .navbar-nav .nav-item .nav-link {
+        width: 100%;
+        text-align: left;
+        padding: 15px 20px;
+    }
+}
